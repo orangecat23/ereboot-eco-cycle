@@ -43,10 +43,14 @@ const Header = () => {
 
           {/* Desktop Auth Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost">Login</Button>
-            <Button className="bg-gradient-hero hover:shadow-green transition-all duration-300">
-              Get Started
-            </Button>
+            <Link to="/login">
+              <Button variant="ghost">Login</Button>
+            </Link>
+            <Link to="/login">
+              <Button className="bg-gradient-hero hover:shadow-green transition-all duration-300">
+                Get Started
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -73,8 +77,12 @@ const Header = () => {
                 </a>
               ))}
               <div className="flex flex-col space-y-2 pt-4 border-t border-border/50">
-                <Button variant="ghost" className="justify-start">Login</Button>
-                <Button className="bg-gradient-hero">Get Started</Button>
+                <Link to="/login">
+                  <Button variant="ghost" className="justify-start w-full">Login</Button>
+                </Link>
+                <Link to="/login">
+                  <Button className="bg-gradient-hero w-full">Get Started</Button>
+                </Link>
               </div>
             </nav>
           </div>
