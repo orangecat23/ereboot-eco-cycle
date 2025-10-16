@@ -48,23 +48,6 @@ const Hero = () => {
             </div>
           </div>
           
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              size="lg" 
-              className="bg-gradient-hero hover:shadow-green transition-all duration-300 transform hover:scale-105"
-            >
-              Schedule Collection
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-primary/20 hover:bg-primary/5 transition-all duration-300"
-            >
-              Learn More
-            </Button>
-          </div>
         </div>
       </div>
     </section>
